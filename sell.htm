@@ -1,0 +1,44 @@
+<html>
+<head>
+<script>
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.text1.focus();
+return false;
+}
+}
+function abc() 
+{
+   var retVal = prompt("Enter car price : ", "Price");
+               
+}
+</script>
+<title>Sell</title></head>
+<style>
+body{background-repeat:no-repeat;
+backgroud-position:right-top;
+background-size:cover;}</style>
+<body background=carss.jpg>
+<a href="carlelo.htm">
+<img src=Untitled.png></a>
+<a href="carlelo.htm">
+<br><h1><font face ="Monotype Corsiva" color="red">Car </font>
+<font face ="Monotype Corsiva" color="black">Lelo</h1></font></a><br>
+<br>
+<br>
+<center><b><font color="black">
+<form name="form1" method="post" action="sell.php">
+First name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" id="fname" name="fname" required><br><br>
+Last name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" id="lname" name="lname" required><br><br>
+Contact Number: <input type="text" id="lname" name="lname" required><br><br>
+Email adderess: &nbsp&nbsp<input type="text" id="text1" name="lname" required><br><br>
+<a href="sellsub.htm"><input type="submit" value="Sell" onclick="abc()" onmouseover="ValidateEmail(document.form1.text1)"></a>
